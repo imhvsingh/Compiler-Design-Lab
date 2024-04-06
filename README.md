@@ -61,11 +61,11 @@ Important
 To run any lex File
 ~   flex prog.l    
 ~   gcc lex.yy.c   
-~   ./a.out
+~   a.exe
 
 
 To run any yacc File
-~   lex prog.l
-~   yacc -d prog.y
-~   gcc -o prog y.tab.c lex.yy.c
-~   ./prog
+~   flex prog.l
+~   bison -dy prog.l
+~   gcc lex.yy.c  y.tab.c
+~   a.exe
